@@ -1,0 +1,31 @@
+[package]
+name = "zetachain-universal-nft"
+version = "0.1.0"
+edition = "2021"
+description = "Universal NFT program for cross-chain interactions between ZetaChain and Solana"
+license = "MIT"
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.17.0"
+spl-token = "4.0.0"
+spl-associated-token-account = "2.2.0"
+spl-metadata = "1.13.0"
+mpl-token-metadata = "3.2.0"
+borsh = "0.10.3"
+borsh-derive = "0.10.3"
+
+[dev-dependencies]
+solana-program-test = "1.17.0"
+solana-sdk = "1.17.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []

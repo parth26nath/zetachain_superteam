@@ -1,0 +1,56 @@
+{
+  "name": "zetachain-universal-nft",
+  "version": "0.1.0",
+  "description": "Universal NFT program for cross-chain interactions between ZetaChain and Solana",
+  "main": "index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "test:localnet": "anchor test --provider.cluster localnet",
+    "test:devnet": "anchor test --provider.cluster devnet",
+    "deploy:localnet": "anchor deploy --provider.cluster localnet",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "start:localnet": "./localnet.sh start",
+    "stop:localnet": "./localnet.sh stop",
+    "demo:localnet": "./localnet.sh demo",
+    "clean": "anchor clean",
+    "lint": "cargo clippy",
+    "fmt": "cargo fmt",
+    "docs": "cargo doc --open"
+  },
+  "keywords": [
+    "solana",
+    "zetachain",
+    "nft",
+    "cross-chain",
+    "blockchain",
+    "defi",
+    "interoperability"
+  ],
+  "author": "ZetaChain Superteam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeta-chain/standard-contracts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zeta-chain/standard-contracts/issues"
+  },
+  "homepage": "https://github.com/zeta-chain/standard-contracts#readme",
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
